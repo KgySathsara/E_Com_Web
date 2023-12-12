@@ -44,7 +44,7 @@
                         <a href=""><img src="../img/Avatar.png" class="adminAvatar"></a>
                         <p class="text-center text-light">Admin</p>
                     </div>
-                    <div class="button text-center p-3">
+                    <div class="button text-center p-2">
                         <button><a href="index.php?insert_products" class="nav-link text-light bg-info my-1">Insert Product</a></button>
                         <button><a href="" class="nav-link text-light bg-info my-1">View Product</a></button>
                         <button><a href="index.php?insert_category" class="nav-link text-light bg-info my-1">Insert Category</a></button>
