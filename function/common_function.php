@@ -340,14 +340,14 @@ function total_cart_price()
     global $conn;
     $ip = getIPAddress(); 
     $total = 0;
-    $seleect_query = "SELECT * FROM `cart_details` WHERE ip_address = '$ip'";
-    $run_query = mysqli_query($conn, $seleect_query);
+    $select_query = "SELECT * FROM `cart_details` WHERE ip_address = '$ip'";
+    $run_query = mysqli_query($conn, $select_query);
 
     while ($row=mysqli_fetch_array($run_query)) {
         # code...
         $product_id = $row['product_id'];
-        $seleect_query_product = "SELECT * FROM `product_tb` WHERE product_id = '$product_id'";
-        $run_query_product = mysqli_query($conn, $seleect_query_product);
+        $select_query_product = "SELECT * FROM `product_tb` WHERE product_id = '$product_id'";
+        $run_query_product = mysqli_query($conn, $select_query_product);
 
         while ($row_product_price = mysqli_fetch_array($run_query_product)) {
             # code...

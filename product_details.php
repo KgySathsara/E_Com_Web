@@ -46,7 +46,7 @@ include "./function/common_function.php";
                             <a class="nav-link" href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i><sup><?php cart_items();?></sup></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Total: 3000.00 Rs</a>
+                            <a class="nav-link" href="#">Total:<?php total_cart_price(); ?>Rs</a>
                         </li>
                     </ul>
                     <form class="d-flex" action="search_product.php" method="GET">
