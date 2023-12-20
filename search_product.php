@@ -46,7 +46,7 @@ include "./function/common_function.php";
                             <a class="nav-link" href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i><sup><?php cart_items();?></sup></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Total:<?php total_cart_price(); ?> Rs</a>
+                            <a class="nav-link" href="#">Total: 3000.00 Rs</a>
                         </li>
                     </ul>
                     <form class="d-flex" action="search_product.php" method="GET">
@@ -70,10 +70,6 @@ include "./function/common_function.php";
                 </li> 
             </ul>
         </nav>
-        <!--calling cart funtion-->
-        <?php
-        cart();  
-        ?>
         <!--second navbar END-->
 
         <!--Heading section-->
@@ -90,14 +86,12 @@ include "./function/common_function.php";
                 <div class="row">
                 <!--Get Product info from Database-->
                 <?php
-                // Calling Function
-                getproducts();
+                //search producuts
+                search_product();
                 //calling Unique Branda
                 get_unique_brands();
                 // calling Unique category
                 get_unique_categories();
-                //Get Ip address
-                getIPAddress();
                 ?>
                 </div>
             </div>   
@@ -110,10 +104,8 @@ include "./function/common_function.php";
                         <a class="nav-link text-light" href="#"><h3>Category</h3></a>
                     </li>
                     <!--calling to category-->
-                    <?php 
-                    //Calling the category
-                    getcategory(); 
-                    ?>
+                    <?php //Calling the category
+                    getcategory(); ?>
                 </ul>
 
                 <!--list -->
@@ -122,10 +114,8 @@ include "./function/common_function.php";
                         <a class="nav-link text-light" href="#"><h3>Brands</h3></a>
                     </li>
                     <!--Calling to brand table-->
-                    <?php 
-                    //Calling the Brand
-                    getbrand(); 
-                    ?>
+                    <?php //Calling the Brand
+                    getbrand(); ?>
                 </ul>
             </div>
         <!--Right Side NavBar end-->    
